@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo">
+        <img src="." alt="logo" class="header__logo-img" />
+      </a>
+
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Інтерактив</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Наша команда</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__personal">
+        <input type="checkbox" class="personal__theme-switcher" />
+        <p class="personal__welcome">Вітаємо, User!</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="main__title">Популярні інетрактивні ігри</h1>
+
+      <section class="birthday">
+        <h2 class="birthday__title">Перевір в який рік ти народився</h2>
+        <div class="birthday__wrap">
+          <input
+            class="birthday__input"
+            type="text"
+            placeholder="Введіть рік народження"
+          />
+          <p class="birthday__answer"></p>
+        </div>
+      </section>
+
+      <section class="num">
+        <h2 class="num__title">Вгадай число, яке загадав комп’ютер</h2>
+        <div class="num__wrap">
+          <input class="num__input" type="text" placeholder="Введіть число" />
+          <p class="num__answer"></p>
+        </div>
+      </section>
+
+      <section class="rps">
+        <h2 class="rps__title">Камінь - ножиці - папір</h2>
+        <ul class="rps__list">
+          <li class="rps__item">
+            <svg class="rps__icon">
+              <use></use>
+            </svg>
+          </li>
+          <li class="rps__item">
+            <svg class="rps__icon">
+              <use></use>
+            </svg>
+          </li>
+          <li class="rps__item">
+            <svg class="rps__icon">
+              <use></use>
+            </svg>
+          </li>
+        </ul>
+        <ul class="rps__count">
+          <h3 class="rps__subtitle">Рахунок:</h3>
+          <li class="rps__players">
+            <p>Комп’ютер - 0</p>
+          </li>
+          <li class="rps__players">
+            <p>Ви - 0</p>
+          </li>
+        </ul>
+        <p class="rps__answer"></p>
+        <button class="rps__btn" type="button">Варіант комп’ютера</button>
+      </section>
+
+      <section class="calc">
+        <h2 class="calc__title">Калькулятор</h2>
+        <input type="text" class="calc__num-first" />
+        <ul class="calc__math">
+          <li class="calc__plus">
+            <svg class="calc__icon">
+              <use></use>
+            </svg>
+          </li>
+          <li class="calc__minus">
+            <svg class="calc__icon">
+              <use></use>
+            </svg>
+          </li>
+          <li class="calc__division">
+            <svg class="calc_icon">
+              <use></use>
+            </svg>
+          </li>
+          <li class="calc__multiplication">
+            <svg class="calc_icon">
+              <use></use>
+            </svg>
+          </li>
+        </ul>
+        <input type="text" class="calc__num-second" />
+        <svg class="calc__icon-equals">
+          <use></use>
+        </svg>
+        <p class="calc__result"></p>
+      </section>
+
+      <section class="time-calc">
+        <h2 class="time-calc__title">Калькулятор часу</h2>
+        <input
+          class="time-calc__input"
+          type="text"
+          placeholder="Введіть число"
+        />
+        <p class="time-calc__time-result"></p>
+      </section>
+
+      <section class="dino">
+        <h2 class="dino__title">Google динозавр</h2>
+      </section>
+
+      <section class="football">
+        <h2 class="football__title">Футбол</h2>
+      </section>
+
+      <section class="max-num">
+        <h2 class="max-num__title">Введіть 3 числа</h2>
+        <ul class="max-num__list">
+          <li class="max-num__item">
+            <input
+              class="max-num__input"
+              type="text"
+              placeholder="Введіть число"
+            />
+          </li>
+          <li class="max-num__item">
+            <input
+              class="max-num__input"
+              type="text"
+              placeholder="Введіть число"
+            />
+          </li>
+          <li class="max-num__item">
+            <input
+              class="max-num__input"
+              type="text"
+              placeholder="Введіть число"
+            />
+          </li>
+        </ul>
+        <p class="max-num__biggest">Найбільше число, яке ви ввели - (число)</p>
+      </section>
+
+      <section class="team">
+        <h2 class="team__title">Наша команда</h2>
+        <div class="team__slider">
+          <svg class="team__slider-icon">
+            <use></use>
+          </svg>
+          <img src="" alt="фото члена команди" />
+          <h3 class="team__slider-title">Ім’я студента</h3>
+          <p class="team__slider-bio">
+            Інформація про роботу, яку він/вона виконав/ла
+          </p>
+          <svg class="team__slider-icon">
+            <use></use>
+          </svg>
+        </div>
+      </section>
+
+      <section class="scientist">
+        <h2 class="scientist__title">Обери вченого/их</h2>
+        <ul class="scientist__cards">
+          <li class="scientist__card"></li>
+          <li class="scientist__card"></li>
+          <li class="scientist__card"></li>
+          <li class="scientist__card"></li>
+          <li class="scientist__card"></li>
+          <li class="scientist__card"></li>
+          <li class="scientist__card"></li>
+          <li class="scientist__card"></li>
+          <li class="scientist__card"></li>
+          <li class="scientist__card"></li>
+          <li class="scientist__card"></li>
+          <li class="scientist__card"></li>
+        </ul>
+        <ul class="scientist__answers">
+          <li class="scientist__answer">
+            <p class="scientist__fact">Які вчені народилися в 19 ст.</p>
+            <p class="scientist__fact">Відсортувати вчених за алфавітом</p>
+            <p class="scientist__fact">
+              Відсортувати вчених за кількістю прожитих років
+            </p>
+            <p class="scientist__fact">
+              Знайти вченого, який народився найпізніше
+            </p>
+            <p class="scientist__fact">
+              Знайти рік народження Albert Einshtein
+            </p>
+            <p class="scientist__fact">
+              Знайти вчених, прізвища яких починаються на на літеру “С”
+            </p>
+            <p class="scientist__fact">
+              Видалити всіх вчених, ім’я яких починається на “А”
+            </p>
+            <p class="scientist__fact">
+              Знайти вченого, який прожив найдовше і вченого, який прожив
+              найменше
+            </p>
+            <p class="scientist__fact">
+              Знайти вчених, в яких співпадають перші літери імені і прізвища
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="footer__columns">
+            <li class="footer__column">
+                <a class="footer__logo">
+                    <img src="." alt="logo" class="footer__logo-img" />
+                </a>
+            </li>
+            <li class="footer__column">
+                <ul class="footer__list">
+                    <li class="footer__items"><a href="tel:381234567890" class="footer__link">Тел: +38 (123) 456 78 90</a></li>
+                    <li class="footer__items"><a href="maito:codingmagis@gmail.com" class="footer__link"></a></li>
+                    <li class="footer__items"><a href="https://www.facebook.com/?locale=ru_RU" class="footer__link">Facebook: CodingMagic</a></li>
+                    <li class="footer__items"><a href="https://x.com/?lang=ru" class="footer__link">Twitter: CodingMagic</a></li>
+                    <li class="footer__items"><a href="https://www.instagram.com/" class="footer__link">Instagram: CodingMagic</a></li>
+                </ul>
+            </li>
+            <li class="footer__column">
+              <div class="footer__wrap">
+                <input type="email" class="footer__input" placeholder="Ваша ел. адреса...">
+                <button class="footer__button">Підписатись</button>
+              </div>
+              <p class="footer__text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</p>
+            </li>
+        </ul>
+    </footer>
+  </body>
+</html>
