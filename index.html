@@ -21,39 +21,41 @@
           <img src="." alt="logo" class="header__logo-img" />
         </a>
 
-        <nav class="header__nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">Інтерактив</a>
-              <a href="#" class="down__btn">
-                <img src="." alt="down icon" class="header__icon-down" />
-              </a>
-              <ul class="header__sublist">
-                <li class="header__sublist-item">
-                  <a href="#" class="header__sublist-link">Числовий</a>
-                </li>
-                <li class="header__sublist-item">
-                  <a href="#" class="header__sublist-link">Ігровий</a>
-                </li>
-                <li class="header__sublist-item">
-                  <a href="#" class="header__sublist-link">Ознайомчий</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Наша команда</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-
-        <div class="header__personal">
-          <input type="checkbox" class="personal__theme-switcher" />
-          <p class="personal__welcome">Вітаємо, User!</p>
+        <div class="header__wrap">
+          <nav class="header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Інтерактив</a>
+                <a href="#" class="down__btn">
+                  <img src="." alt="down icon" class="header__icon-down" />
+                </a>
+                <ul class="header__sublist">
+                  <li class="header__sublist-item">
+                    <a href="#" class="header__sublist-link">Числовий</a>
+                  </li>
+                  <li class="header__sublist-item">
+                    <a href="#" class="header__sublist-link">Ігровий</a>
+                  </li>
+                  <li class="header__sublist-item">
+                    <a href="#" class="header__sublist-link">Ознайомчий</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Наша команда</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <div class="header__personal">
+            <input type="checkbox" class="personal__theme-switcher" />
+            <p class="personal__welcome">Вітаємо, User!</p>
+          </div>
         </div>
-      </div>
+        </div>
     </header>
 
     <main class="main">
@@ -102,17 +104,17 @@
           <ul class="rps__list">
             <li class="rps__item">
               <button class="rps__btn">
-                <img class="rps__img" src="" alt="">
+                <img class="rps__img" src="" alt="stone">
               </button>
             </li>
             <li class="rps__item">
               <button class="rps__btn">
-                <img class="rps__img" src="" alt="">
+                <img class="rps__img" src="" alt="scissor">
               </button>
             </li>
             <li class="rps__item">
               <button class="rps__btn">
-                <img class="rps__img" src="" alt="">
+                <img class="rps__img" src="" alt="paper">
               </button>
             </li>
           </ul>
@@ -127,7 +129,7 @@
               <p class="rps__count-desc">Ви - 0</p>
             </li>
           </ul>
-          <p class="rps__answer"></p>
+          <p class="rps__answer">Ви виграли раунд!</p>
           <button class="rps__btn-bot" type="button">Варіант комп’ютера</button>
           <hr class="line" />
         </div>
@@ -144,7 +146,7 @@
               <button onclick="calculate('-')" type="button" class="calc__btn"><span class="calc__span">-</span></button>
               <button onclick="calculate('/')" type="button" class="calc__btn"><span class="calc__span">/</span></button>
             </div>
-            <input type="text" class="calc__input-two" placeholder="Введіть число">
+            <input type="text" class="calc__input-second" placeholder="Введіть число">
             <button type="button" class="calc__btn"><span class="calc__span">=</span></button>
             <input type="text" class="calc__input-result" placeholder="Результат">
           </form>
@@ -155,15 +157,16 @@
       <section class="time">
         <div class="container time__container">
           <h2 class="title">Калькулятор часу</h2>
-          <div class="time__wrapper">
+          <div class="time__wrap">
             <form action="" class="time__form">
               <input class="time__input" type="text" placeholder="Введіть число">
-              <button class="time__button" type="button">
-                <img class="time__button-icon" src="." alt="search">
+              <button class="time__btn" type="button">
+                <img class="time__btn-icon" src="." alt="search">
               </button>
             </form>
             <p class="time__text">3 дн. 15:45:01</p>
           </div>
+          <hr class="line">
         </div>
       </section>
 

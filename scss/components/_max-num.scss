@@ -1,1 +1,31 @@
 @use "../utils/variables" as *;
+
+.max-num {
+    &__form {
+        display: flex;
+        justify-content: center;
+        gap: 38px;
+    }
+
+    &__input{
+        background-color: $input-bg;
+        border-radius: 20px;
+        padding: 10px 45px 10px 10px;
+        border: none;
+        width: 135px;
+
+        &::placeholder {
+            font-family: $font-family;
+            font-size: 12px;
+            color: $placeholder-color;
+        }
+    }
+
+    &__biggest {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 36px;
+    }
+}

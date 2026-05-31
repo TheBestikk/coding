@@ -1,1 +1,46 @@
 @use "../utils/variables" as *;
+.num {
+
+    &__form{
+        position: relative;
+    }
+        
+    &__wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 149px;
+    }
+
+    &__answer {
+        font-family: $font-family;
+        font-size: 12px;
+        text-align: right;
+        color: $true-color;
+    }
+
+    &__btn{
+        background-color: $font-color;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 8px;
+        position: absolute;
+        left: 200px;
+        border: none;
+    }
+
+    &__input {
+        background-color: $input-bg;
+        border-radius: 20px;
+        padding: 10px 45px 10px 10px;
+        border: none;
+
+        &::placeholder{
+            font-family: $font-family;
+            font-size: 12px;
+            color: $placeholder-color;
+        }
+    }
+
+}
