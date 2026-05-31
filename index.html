@@ -136,47 +136,34 @@
       <section class="calc">
         <div class="container calc__container">
           <h2 class="title">Калькулятор</h2>
-          <input type="text" class="calc__num-first" />
-          <ul class="calc__math">
-            <li class="calc__plus">
-              <svg class="calc__icon">
-                <use></use>
-              </svg>
-            </li>
-            <li class="calc__minus">
-              <svg class="calc__icon">
-                <use></use>
-              </svg>
-            </li>
-            <li class="calc__division">
-              <svg class="calc_icon">
-                <use></use>
-              </svg>
-            </li>
-            <li class="calc__multiplication">
-              <svg class="calc_icon">
-                <use></use>
-              </svg>
-            </li>
-          </ul>
-          <input type="text" class="calc__num-second" />
-          <svg class="calc__icon-equals">
-            <use></use>
-          </svg>
-          <p class="calc__result"></p>
+          <form action="" class="calc__form">
+            <input type="text" class="calc__input" placeholder="Введіть число">
+            <div class="calc__btn-wrap">
+              <button onclick="calculate('+')" type="button" class="calc__btn"><span class="calc__span">+</span></button>
+              <button onclick="calculate('*')" type="button" class="calc__btn"><span class="calc__span">*</span></button>
+              <button onclick="calculate('-')" type="button" class="calc__btn"><span class="calc__span">-</span></button>
+              <button onclick="calculate('/')" type="button" class="calc__btn"><span class="calc__span">/</span></button>
+            </div>
+            <input type="text" class="calc__input-two" placeholder="Введіть число">
+            <button type="button" class="calc__btn"><span class="calc__span">=</span></button>
+            <input type="text" class="calc__input-result" placeholder="Результат">
+          </form>
           <hr class="line" />
         </div>
       </section>
 
-      <section class="time-calc">
-        <div class="container time-calc__container">
+      <section class="time">
+        <div class="container time__container">
           <h2 class="title">Калькулятор часу</h2>
-          <input
-            class="time-calc__input"
-            type="text"
-            placeholder="Введіть число"
-          />
-          <p class="time-calc__time-result"></p>
+          <div class="time__wrapper">
+            <form action="" class="time__form">
+              <input class="time__input" type="text" placeholder="Введіть число">
+              <button class="time__button" type="button">
+                <img class="time__button-icon" src="." alt="search">
+              </button>
+            </form>
+            <p class="time__text">3 дн. 15:45:01</p>
+          </div>
         </div>
       </section>
 
