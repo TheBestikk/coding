@@ -641,6 +641,64 @@ img {
   padding-top: 36px;
 }
 
+.scientist__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  row-gap: 59px;
+  -webkit-column-gap: 36px;
+     -moz-column-gap: 36px;
+          column-gap: 36px;
+  width: 536px;
+}
+.scientist__card {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(217, 217, 217);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.scientist__overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: opacity 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+.scientist__overlay-desc {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 170%;
+  text-align: center;
+}
+.scientist__card:hover .scientist__overlay {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .footer {
   padding-block: 60px;
 }
