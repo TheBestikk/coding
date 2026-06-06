@@ -641,6 +641,15 @@ img {
   padding-top: 36px;
 }
 
+.scientist__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .scientist__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,11 +701,49 @@ img {
   font-size: 8px;
   line-height: 170%;
   text-align: center;
+  padding: 12px;
 }
 .scientist__card:hover .scientist__overlay {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+.scientist__wrap {
+  padding-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 36px;
+}
+.scientist__filters-first {
+  text-align: right;
+}
+.scientist__filters-first, .scientist__filters-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.scientist__btn {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 12px;
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: rgb(255, 255, 255);
+  -webkit-box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+}
+.scientist__btn--last {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footer {
